@@ -1,7 +1,10 @@
-export class Circle {
+import { Figure } from "./figure";
+
+export class Circle extends Figure {
   private radius: number;
 
   constructor(radius: number) {
+    super();
     this.radius = radius;
   }
 

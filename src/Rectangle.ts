@@ -1,15 +1,13 @@
-export interface RectangleOptions {
-  width: number;
-  height: number;
-}
+import { Figure } from "./figure";
 
-export class Rectangle {
+export class Rectangle extends Figure {
   private width: number;
   private height: number;
 
-  constructor(options: RectangleOptions) {
-    this.width = options.width;
-    this.height = options.height;
+  constructor(width: number, height: number) {
+    super();
+    this.width = width;
+    this.height = height;
   }
 
   getArea(): number {
